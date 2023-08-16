@@ -1,3 +1,12 @@
+@media (max-width:1020px){
+    .home .front {
+        font-size: 70px;
+    }
+    .home .dev {
+        font-size: 120px;
+    }
+}
+
 @media (max-width:420px) {
     
     .cabeçalho h1 {
@@ -59,14 +68,5 @@
     /*FOOOTER*/
     .footer h2 {
         font-size: 16px;
-    }
-}
-
-@media (max-width:1020px){
-    .home .front {
-        font-size: 70px;
-    }
-    .home .dev {
-        font-size: 120px;
     }
 }
