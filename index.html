@@ -3,119 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/resposive.css">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Caveat:wght@500&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Caveat:wght@500&family=Dosis&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,700&display=swap" rel="stylesheet">
     <title>Portifolio - Pedro Jonnathan</title>
 </head>
 <body>
-    <header class="cabeçalho">
+    <header id="header">
         <h1 class="logo">
-            <a href="/">
-                Pedro Jonnathan
-            </a>
+            PEDRO.DEV
         </h1>
-        <nav class="menu">
-            <input type="checkbox" id="menu-hamburguer" />
-
-            <label for="menu-hamburguer">
-                <div class="menu02">
-                    <span class="hamburguer">
-
-                    </span>
-                </div>
-            </label>
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#experiencia">Experiencias</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
+    <main id="main">
         <section class="home">
-            <h2 class="ola">OI, EU SOU O PEDRO</h2>
-            <div class="infor-front">
-                <h2 class="front">FRONTEND</h2>
-                <ul class="redes">
-                    <li><a href="https://www.linkedin.com/in/pedro-jonnathan-b070a1265/" target="_blank"><img src="src/img/link.png" alt="icone"></a></li>
-                    <li><a href="https://github.com/pjonnathan" target="_blank"><img src="src/img/github.png" alt="icone"></a></li>
-                    <li><a href=""><img src="src/img/documento.png" alt="icone"></a></li>
-                </ul>
-            </div>
-            
-            <h2 class="dev">DEVELOPER</h2>
-            <p>Tenho 21 anos sou desenvolvedor frontend<br>
-            e curso faculdade de ADS na UFC</p>
+            <aside class="informaçoes">
+                <aside class="text">
+                    <p>Oi, eu sou o Jonnathan</p>
+                    <h2 class="digitando">FRONTEND DEVELOPER
+                    </h2>
+                    <p>um desenvolvedor apaixonado por desenvolvimento web com sede no Ceará, Brasil. <i class="fa-solid fa-location-dot"></i></p>
+                    <aside class="redes-sociais">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </aside>
+                </aside>
+                <img src="src/img/ufc.png" alt="">
+            </aside>
+            <aside class="tecnologias">
+                <p>Tech Stock | </p>
+                <i id="html" class="fa-brands fa-html5"></i>
+                <i id="css" class="fa-brands fa-css3-alt"></i>
+                <i id="js" class="fa-brands fa-js"></i>
+                <i id="git" class="fa-brands fa-git-alt"></i>
+            </aside>
         </section>
-        <section class="projetos" id="projetos">
-            <div class="projeto01">
-                <a href="https://github.com/pjonnathan/LandingPage-Cafeteira" target="_blank">
-                    <img src="src/img/projeto01.avif" alt="projeto cafeteria">
-                </a>
-                <p>Estudando HTML e CSS</p>
-                <h2>Projeto Landing Page Cafeteria</h2>
-            </div>
-        </section>
-        <section class="formacao" id="formacao">
-            <div class="formacao-infor">
-                <img src="src/img/ufc.png" alt="logo ufc">
-                <h2>UFC - Campus de Itapajé-CE - Curso Tecnologo Analise e Desenvolvimento de Sistemas</h2>
-            </div>
-            <div class="formacao-infor"> 
-                <img src="src/img/ifce.png" alt="logo ifce">
-                <h2>IFCE - Campus de Umirim-CE - Curso Tecnico de Informática</h2>
-            </div>
-        </section>
-        <section class="experiencia" id="experiencia">
-            <h2>Rubert Tecnologia - Fortaleza-CE - cargo: Estágio Tester</h2>
-            <ul>
-                <li>Quadro Kanban - TRELLO</li>
-                <li>Teste de sistema</li>
-                <li>Trabalho em equipe</li>
-                <li>Caso de teste</li>
-            </ul>
-        </section>
-        <section class="tecnologias" id="tecnologias">
-            <div class="html">
-                <img src="src/img/html-5.avif" alt="logo do html">
-                <h3>HTML</h3>
-                <p>HTML é uma linguagem de marcação ultilizada na contrução de pagina Web</p>
-            </div>
-            <div class="css">
-                <img src="src/img/css.png" alt="logo do css">
-                <h3>CSS</h3>
-                <p>Aplicação ultilizada na estilização de componetes escrito em linguagem de marcação</p>
-            </div>
-            <div class="javascript">
-                <img src="src/img/javascript-logo.png" alt="logo do javascript">
-                <h3>JAVASCRIPT</h3>
-                <p>Ultilizo o JavaSript para criar aplicações com comportamento interativo e complexo</p>
-            </div>
-            <div class="git-github">
-                <img src="src/img/git.png" alt="logo do git">
-                <h3>GIT E GITHUB</h3>
-                <p>Ultilizo o git e o gitHub para controle de versões das minhas aplicações</p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <h2>PEDRO JONNATHAN</h2>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li></li>
-        </ul>
-    </footer>
-</body>
-</html>
+        <section class="projetos">
+            <h2>PORTIFILO</h2>
+            <p class="p-descri">Cada projeto é uma peça única de desenvolvimento</p>
+            <aside class="projeto-one">
+                <img src="./src/img/projeto-01.png" alt="Imagem do projeto da cafeteria">
+                <aside class="informacao-projeto">
+                    <p><strong>PAGE CAFETERIA</strong><p>
+                    <p class="text-infor">
+                        Criei uma landing page criativa para uma cafeteria, unindo design elegante a funcionalidade 
+                        prática. Através de cores acolhedoras e imagens de qualidade, destaquei a essência da cafeteria, incluindo menu interativo, 
+                        localização e tudo otimizado para dispositivos móveis.
+                    </p>
+                    <p><strong>HTML CSS</strong><p>
+                    <aside class="link-projeto">
+                        <a href="">
+                            <p>Code <i class="fa-brands fa-github"></i></p>
+                        </a>
+                        <a href="">
+                            <p>Live Demo <i class="fa-solid fa-link"></i></p>
+                        </a>
+                    </aside>
+                </aside>
+            </aside>
+            <aside class="projeto-two">
+                <aside class="informacao-projeto">
+                    <p><strong>PAGE AGÊNCIA</strong><p>
+                        <p class="text-infor">
+                            Desenvolvi uma landing page para uma agência, onde empreguei as técnicas do Flexbox e Grid. 
+                            Essas abordagens me permitiram criar uma interface visualmente agradável e adaptável, 
+                            garantindo uma experiência consistente em diferentes dispositivos.
+                        </p>
+                        <p><strong>FLEXBOX E GRID</strong><p>
+                        <aside class="link-projeto">
+                            <a href="">
+                                <p>Code <i class="fa-brands fa-github"></i></p>
+                            </a>
+                            <a href="">
+                                <p>Live Demo <i class="fa-solid fa-link"></i></p>
+                            </a>
+                        </aside>
+                    </aside>
+                <img src="./src/img/projeto-02.png" alt="Imagem do projeto agência">
+                </aside>
+            </section>
+            <section class="formations">
+                <h2>FORMAÇÕES</h2>
+                <p class="p-descri">TI por amor! rsrs</p>
+                <aside class="seçao-formations">
+                    <aside class="formation">
+                        <img src="./src/img/ifce.png" alt="IFCE">
+                        <h3>IFCE - Técnico em Informática</h3>
+                    </aside>
+                    <aside class="formation">
+                        <img src="./src/img/ufc.png" alt="UFC">
+                        <h3>UFC - Análise e Desencimento de Sistamas</h3>
+                    </aside>
+                </aside>
+            </section>
+        </main>
+        <footer id="footer">
+            <h2>CONTACT</h2>
+            <p class="p-descri">Não seja tímido! Contrate-me!</p>
+            <aside class="contact">
+                <div class="information">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="text-inf">
+                        <h3>Localização</h3>
+                        <p>Ceará Brasil</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="text-inf">
+                        <h3>Email</h3>
+                        <p>jonnathanmatos846@gmail.com</p>
+                    </div>
+                </div>
+            </aside>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

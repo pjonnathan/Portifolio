@@ -1,264 +1,238 @@
 /*HEADER*/
-.cabeçalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#header .logo{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    background-color: #fff;
+}
+
+/*MAIN*/
+.informaçoes {
+    margin-top: 80px;
     padding: 30px;
-}
-
-.menu ul {
-    display: flex;
-    gap: 20px;
-}
-
-.logo a:hover{
-    color: coral;
-    transition: 0.5s;
-}
-
-.menu ul li a:hover {
-    color: white;
-    border-radius: 50px;
-    padding: 10px;
-    background-color: coral;
-    transition: 0.2s;
-}
-
-/*HOME*/
-
-.home {
-    padding: 30px;
-}
-
-.home .infor-front {
-    display: flex;
-}
-.home .front {
-    font-size: 110px;
-    display: flex;
-    align-items: center;
-}
-.home .dev {
-    margin-top: -40px;
-    font-size: 180px;
-}
-.home p {
-    text-align: right;
-    margin-right: 80px;
-}
-.redes {
-    padding: 40px;
-    display: flex;
-    gap: 20px;
-}
-.redes li img {
-    width: 50px;
-    height: 50px;
-}
-
-/*PROJETOS*/
-.projetos {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
 }
 
-.projetos img {
+.informaçoes p{
+    font-family: 'Dosis', sans-serif;
+}
+
+.text {
+    animation: inicializar .7s forwards;
     width: 400px;
-    height: 260px;
+    text-align: justify;
 }
 
-.projetos p {
-    padding: 8px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+.redes-sociais i{
+    color: black;
+    font-weight: 900;
 }
 
-.projetos h2 {
-    padding: 5px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+.text h2 {
+    font-size: 50px;
+    color: rgb(80, 78, 78);
 }
 
-/*TECNOLOGIAS*/
+.digitando::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+
+.text i {
+    padding: 10px;
+}
 
 .tecnologias {
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.tecnologias div {
-    text-align: center;
-    width: 300px;
-}
-
-.tecnologias img {
-    width: 100px;
-    height: 100px;
-}
-
-.tecnologias h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Quicksand', sans-serif;
+    justify-content: center;
 }
 
 .tecnologias p {
+    font-size: 30px;
+    color: #181818;
+    font-family: 'Dosis', sans-serif;
+}
+
+.tecnologias i {
+    padding: 10px;
+    font-size: 25px;
+    border: 0 solid coral;
+}
+
+.tecnologias #html {
+    color: orange;
+}
+
+.tecnologias #css {
+    color: blue;
+}
+
+.tecnologias #js {
+    color: yellow;
+}
+
+.tecnologias #git {
+    color: rgb(243, 42, 42);
+}
+
+/*PROJETOS*/
+
+.projetos {
+    margin-top: 142px;
+}
+
+.projetos h2,
+#footer h2,
+.formations h2 {
+    color: blue;
+    padding-left: 30px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.projetos .p-descri,
+#footer .p-descri,
+.formations .p-descri {
+    padding-top: 10px;
+    font-weight: bold;
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 30px;
+    font-family: 'Bricolage Grotesque', sans-serif;
     font-family: 'Caveat', cursive;
     font-family: 'Quicksand', sans-serif;
 }
 
-/*FORMAÇÃO*/
-
-.formacao {
-    margin-top: 100px;
+.projeto-one img,
+.projeto-two img {
+    border-radius: 15px;
+    background: #bdbcbc;
+    box-shadow: 28px -28px 16px #706f6f,
+                -28px 28px 16px #ffffff;
+    width: 500px;
+    height: 260px;
 }
 
-.formacao .formacao-infor{
+.projeto-one,
+.projeto-two {
+    margin-top: 50px;
     display: flex;
-    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    visibility: hidden;
 }
 
-.formacao h2 {
-    padding: 30px;
-    font-family: 'Caveat', cursive;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.formacao img {
-    width: 100px;
-    height: 100px;
-}
-
-/*EXPERIENCIAS*/
-
-.experiencia {
-    margin-top: 100px;
-}
-
-.experiencia h2{
-    padding: 30px;
-}
-
-.experiencia ul li {
-    padding-left: 80px;
-    padding-bottom: 5px;
-    font-size: 20px;
-}
-
-/*FOOTER*/
-
-.footer {
-    margin-top: 40px;
-    height: 110px;
-    background-color: coral;
-    color: white;
+.informacao-projeto {
+    width: 220px;
     text-align: center;
 }
 
-.footer h2 {
-    font-size: 50px;
-}
-
-/*RESPONSIVE*/
-
-.cabeçalho .menu02 {
-    display: none;
-    width: 60px;
-    height: 60px;
-    align-self: flex-end;
-}
-
-.cabeçalho nav label {
+.informacao-projeto .link-projeto {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
 }
 
-.cabeçalho .hamburguer {
-    background-color: #000;
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 2px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
+.projetos p {
+    padding: 2px;
+    font-family: 'Dosis', sans-serif;
 }
 
-.cabeçalho .hamburguer:before,
-.cabeçalho .hamburguer:after {
-    background-color: #000;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.2s ease-in-out;
+.informacao-projeto .text-infor {
+    font-size: 12px;
 }
 
-.cabeçalho .hamburguer:before {
-    top: 10px;
-}
-
-.cabeçalho .hamburguer:after {
-    bottom: -10px;
-}
-
-.cabeçalho input {
-    display: none;
-}
-
-.cabeçalho input:checked ~ label .hamburguer{
-    transform: rotate(45deg);
-}
-
-.cabeçalho input:checked ~ label .hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-}
-
-.cabeçalho input:checked ~ label .hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
+.link-projeto p:hover {
+    color: blue;
 }
 
 
+/*FORMATION*/
+.formations {
+    margin-top: 140px;
+} 
 
-@media (max-width: 900px) {
-    .cabeçalho .menu02 {
-        display: block;
+.seçao-formations {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    visibility: hidden;
+}
+
+.formations .formation {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.formations .formation h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.formations .formation img {
+    width: 150px;
+    margin-bottom: 30px;
+    
+}
+
+
+/*FOOTER*/
+#footer {
+    margin-top: 144px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+.information {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 0;
+}
+
+.information i{
+    color: lightseagreen;
+    font-size: 30px;
+}
+
+
+/*ANIMAÇÕES*/
+
+@keyframes pisca{
+    from {
+        opacity: 1;
+
     }
-
-    .cabeçalho nav ul {
-        display: none;
+    to {
+        opacity: 0;
     }
+}
 
-    .cabeçalho input:checked ~ ul {
-        display: block;
-    }
-
-    .cabeçalho nav {
-        position: absolute;
-        top: 8px;
-        right: 0;
-        z-index: 1;
+@keyframes inicializar{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
 
     }
-
-    .cabeçalho nav ul {
-        width: 200px;
-        background-color: #fff;
-        padding: 20px;
-    }
-
-    .cabeçalho nav ul a {
-        text-align: center;
-        padding: 20px;
-        display: block;
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
