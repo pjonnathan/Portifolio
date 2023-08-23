@@ -27,6 +27,14 @@
         text-align: center;
     }
 
+    .tecnologias p {
+        font-size: 1rem;
+    }
+
+    .tecnologias i {
+        font-size: 15px;
+    }
+
     .projetos h2,
     #footer h2,
     .formations h2 {
