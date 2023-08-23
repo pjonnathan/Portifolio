@@ -1,5 +1,55 @@
-@media (max-width:1020px){
+@media (max-width:768px){
+    .projeto-one img,
+    .projeto-two img {
+        width: 300px;
+    }
+    .projetos h2,
+    #footer h2,
+    .formations h2 {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .projetos .p-descri,
+    #footer .p-descri,
+    .formations .p-descri {
+        width: 600px;
+        margin: 0 auto;
+    }
 }
 
-@media (max-width:420px) {
+@media (max-width:480px) {
+    .informaçoes {
+        display: block;
+        text-align: center;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projetos h2,
+    #footer h2,
+    .formations h2 {
+        width: 380px;
+    }
+    .projetos .p-descri,
+    #footer .p-descri,
+    .formations .p-descri {
+        width: 380px;
+        font-size: 1rem;
+    }
+
+    .projeto-one,
+    .projeto-two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
 }

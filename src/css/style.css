@@ -120,7 +120,6 @@
     box-shadow: 28px -28px 16px #706f6f,
                 -28px 28px 16px #ffffff;
     width: 500px;
-    height: 260px;
 }
 
 .projeto-one,
@@ -170,6 +169,7 @@
     justify-content: center;
     gap: 50px;
     visibility: hidden;
+    flex-wrap: wrap;
 }
 
 .formations .formation {
