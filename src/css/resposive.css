@@ -55,9 +55,12 @@
 
     .contact {
         display: flex;
+        gap: 10px;
         flex-direction: column;
         justify-content: center;
 
     }
-    
+    .information i{
+        font-size: 20px;
+    }
 }
