@@ -28,8 +28,14 @@
 }
 
 .redes-sociais i{
-    color: black;
+    color: lightseagreen;
     font-weight: 900;
+    transition: 0.5s;
+}
+
+.redes-sociais i:hover{
+    color: #706f6f;
+    font-size: 30px;
 }
 
 .text h2 {
