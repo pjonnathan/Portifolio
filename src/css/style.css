@@ -9,6 +9,7 @@
 
 /*MAIN*/
 .informaçoes {
+    animation: inicializar .7s forwards;
     margin-top: 80px;
     padding: 30px;
     display: flex;
@@ -19,6 +20,11 @@
 
 .informaçoes p{
     font-family: 'Dosis', sans-serif;
+}
+
+.informaçoes img {
+    width: 300px;
+    border-radius: 180px;
 }
 
 .text {

@@ -34,6 +34,7 @@ function isElementInViewport(el) {
 window.sr = ScrollReveal({ reset: true});
 sr.reveal('.projeto-one', {duration: 3000});
 sr.reveal('.projeto-two', {duration: 3000});
+
 //ANIMAÇÃO DA SEÇÃO DE FORMAÇÃO
 window.sro = ScrollReveal({ reset: true});
 sro.reveal('.seçao-formations', {
