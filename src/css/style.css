@@ -1,4 +1,5 @@
 /*HEADER*/
+
 #header .logo{
     margin-top: 10px;
     font-size: 20px;
@@ -96,15 +97,47 @@
     color: rgb(243, 42, 42);
 }
 
+/*SOBRE ME*/
+.sobre-me {
+    margin-top: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sobre-me img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.infor-sobre {
+    width: 300px;
+    padding-left: 20px;
+}
+
+.infor-sobre .titulo {
+    color: blue;
+    font-size: 16px;
+}
+
+.infor-sobre .decricao {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.infor-sobre p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 /*PROJETOS*/
 
 .projetos {
-    margin-top: 142px;
+    margin-top: 210px;
 }
 
 .projetos h2,
-#footer h2,
-.formations h2 {
+#footer h2{
     color: blue;
     padding-left: 30px;
     width: 800px;
@@ -113,8 +146,7 @@
 }
 
 .projetos .p-descri,
-#footer .p-descri,
-.formations .p-descri {
+#footer .p-descri{
     padding-top: 10px;
     font-weight: bold;
     width: 800px;
@@ -171,34 +203,7 @@
 
 
 /*FORMATION*/
-.formations {
-    margin-top: 140px;
-} 
 
-.seçao-formations {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    visibility: hidden;
-    flex-wrap: wrap;
-}
-
-.formations .formation {
-    padding: 70px 20px;
-    text-align: center;
-}
-
-.formations .formation h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.formations .formation img {
-    width: 150px;
-    margin-bottom: 30px;
-    
-}
 
 
 /*FOOTER*/
